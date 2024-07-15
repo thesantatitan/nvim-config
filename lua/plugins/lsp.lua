@@ -15,6 +15,9 @@ return {
             },
           },
         },
+        ruff_lsp = {
+          autostart = false,
+        },
       },
     },
   },

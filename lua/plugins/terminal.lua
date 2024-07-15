@@ -5,7 +5,7 @@ return {
   opts = {
     size = function(term)
       if term.direction == "horizontal" then
-        return 15 -- Set to your preferred height
+        return 12 -- Set to your preferred height
       elseif term.direction == "vertical" then
         return vim.o.columns * 0.4
       end
