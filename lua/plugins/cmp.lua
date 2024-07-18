@@ -39,15 +39,15 @@ return {
 
         -- If you prefer more traditional completion keymaps,
         -- you can uncomment the following lines
-        ["<CR>"] = cmp.mapping.confirm({ select = true }),
-        ["<Tab>"] = function(fallback)
+        ["<Tab>"] = cmp.mapping.confirm({ select = true }),
+        ["<Down>"] = function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
           else
             fallback()
           end
         end,
-        ["<S-Tab>"] = cmp.mapping.select_prev_item(),
+        ["<Up>"] = cmp.mapping.select_prev_item(),
 
         -- Manually trigger a completion from nvim-cmp.
         --  Generally you don't need this, because nvim-cmp will display
@@ -66,6 +66,7 @@ return {
         { name = "path" },
         { name = "buffer" },
         { name = "luasnip" },
+        { name = "copilot" },
       },
     })
   end,
